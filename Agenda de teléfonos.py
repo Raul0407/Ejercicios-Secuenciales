@@ -23,3 +23,5 @@ vTelefonos.append(telefono)
 
 print(vNombres)
 print(vTelefonos)
+
+print("El nombre de tu contacto es:", vNombres, "su número es:", vTelefonos)
