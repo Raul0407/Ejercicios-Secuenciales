@@ -9,7 +9,7 @@ x2 = (int)(input("Dime la coordenada x de la segunda circunferencia:\n"))
 y2 = (int)(input("Dime la coordenada y de la segunda circunferencia:\n"))
 r2 = (int)(input("Dime el radio de la segunda circunferencia:\n"))
 
-distanciacircunferencias = math.sqrt(x2-x1)+(y2-y1)
+distanciacircunferencias = math.sqrt(x2-x1)**2+(y2-y1)**2
 
 if distanciacircunferencias > (r1 + r2):
     print("Las circunferencias son exteriores")
