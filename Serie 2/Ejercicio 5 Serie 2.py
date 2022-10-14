@@ -1,13 +1,16 @@
 #EJERCICIO 5
 
-usuario = (str)(input("Dime tu usuario:\n"))
-usuariooriginal = "Pepe"
-contrasena = (str)(input("Dime tu contraseña:\n"))
-contrasenaoriginal = "asdasd"
-if usuario==usuariooriginal:
-    if contrasena==contrasenaoriginal:
-        print("Entrando al sistema...")
-    else:
-        print("La contraseña no es correcta")
-else:
-    print("El usuario no es correcto")
+usuSecreto="Pepe"
+passSecreto="asdasd"
+usuario = input("Dime tu usuario: ")
+contrasena= input("Dime tu contraseña: ")
+
+while (usuSecreto!=usuario or passSecreto!=contrasena) :
+ if(usuSecreto!=usuario) :
+    print("Error en el ususario") 
+    usuario = input("Dime tu usuario: ")
+ elif (passSecreto!=contrasena):
+    print("Error en la contraseña") 
+    usuario = input("Dime tu contraseña: ")
+
+print("Usuario y Contraseña correctos")
