@@ -14,14 +14,18 @@ Ejemplo: [Juan - Teléfono, Pepe - Teléfono]
 
 vNombres = []
 vTelefonos = []
-
-nombre = (str)(input("Dime un nombre:\n"))
-telefono = (int)(input("Dime su telefono:\n"))
-
-vNombres.append(nombre)
-vTelefonos.append(telefono)
-
-print(vNombres)
-print(vTelefonos)
-
-print("El nombre de tu contacto es:", vNombres.pop(), "su número es:", vTelefonos.pop())
+opcion = 0
+while opcion != 5:
+    print("-----Menú Agenda-----")
+    print("1-Insertar Contácto")
+    print("2-Borrar Contácto")
+    print("3-Buscar Contácto")
+    print("4-Ver todos los Contáctos")
+    print("5-Salir")
+    try:
+        opcion = (int)(input("Introduce una opción:\n"))
+    except:
+        print("Las opciones son de la 1 a la 5")
+    
+    
+print("Saliste de la base de datos")
