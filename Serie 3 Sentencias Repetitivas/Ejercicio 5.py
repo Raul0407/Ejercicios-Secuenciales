@@ -1,6 +1,6 @@
 #EJERCICIO 5
 
-letra = (str)(input("Dime una letra (pulsa espacio para salir):\n"))
+letra = (str)(input("Dime una letra (pulsa espacio para salir):\n")).lower()
 numero = 0
 while letra != " ":
     if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":

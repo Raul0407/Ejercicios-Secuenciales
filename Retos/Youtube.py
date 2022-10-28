@@ -17,7 +17,7 @@ mp3.download()
 '''
 
 '''
-Descargar una canción
+#Descargar una canción
 def descargaCancion(url:str):
     youtube = YouTube(url)
     print(youtube.author)
@@ -28,6 +28,7 @@ def descargaCancion(url:str):
 descargaCancion("https://www.youtube.com/watch?v=YVkUvmDQ3HY")
 '''
 
+#Descargar Playlist
 def descargarPlaylist(url:str):
     playlist = Playlist(url)
     for cancion in playlist.videos:
