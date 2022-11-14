@@ -1,6 +1,7 @@
 #EJERCICIO 19
 
-def pintaMenu(opc:int):
+opcion = 0
+def pintaMenu(opcion:int):
     vNombres = []
     vTelefonos = []
     opcion = 0
@@ -19,4 +20,4 @@ def pintaMenu(opc:int):
     
     print("Saliste de la base de datos")
 
-pintaMenu("Has seleccionado", pintaMenu())
+pintaMenu("Has seleccionado", pintaMenu(opcion))
