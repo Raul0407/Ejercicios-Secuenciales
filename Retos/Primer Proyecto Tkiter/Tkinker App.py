@@ -7,13 +7,12 @@ def Saludar():
     textoLabel.set(texto)
 
 #GENERO LA VENTANA
-ventana = Tk()
+ventana = tk.Tk()
 ventana.title("Primer Ejercicio")
 ventana.geometry("250x300")
 ventana.resizable()
 ventana.config(background="deep sky blue")
-icono = tk.PhotoImage(file="images.png")
-ventana.iconbitmap(icono)
+ventana.iconbitmap('/home/raullm/Documentos/GitKraken/Ejercicios-Secuenciales/Retos/Primer Proyecto Tkiter/icon-32.png')
 
 #GENERO EL LIENZO PARA PINTAR COMPONENTES
 frm = ttk.Frame(ventana).pack() #o .pack
