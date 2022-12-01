@@ -34,7 +34,7 @@ def descargarPlaylist(url:str):
     playlist = Playlist(url)
     for cancion in playlist.videos:
         print("Descargando canción:", cancion.title)
-        cancion.streams.get_audio_only().download("Ejercicios-Secuenciales/Canciones/")
+        cancion.streams.get_audio_only().download("Ejercicios-Secuenciales/Python/Projects/Canciones/")
         
 
 url = "https://www.youtube.com/playlist?list=PLSFitF4B6yNS82pcRx5XvD1PB6m8lIs5J"
