@@ -25,7 +25,8 @@ def main(page: ft.Page):
 
 
     
-    boton = ft.FloatingActionButton(icon = ft.icons.ADD, on_click = guardarDatos, )
+    boton = ft.FloatingActionButton(icon = ft.icons.ADD, on_click = guardarDatos)
+    
     page.add(boton)
     boton2 = ft.FloatingActionButton(icon = ft.icons.ABC)
     page.add(boton2)
