@@ -24,14 +24,15 @@ def main(page: ft.Page):
     
     textField_Alimentos = ft.TextField(label="Ingredientes",hint_text="Escribe tu lista de la compra (Pulsa el botón + para guardar)")
     page.add(textField_Alimentos)
-
-
     
     boton = ft.FloatingActionButton(icon = ft.icons.ADD, on_click = guardarDatos)
+    boton2 = ft.FloatingActionButton(icon = ft.icons.ABC, on_click=)
+
+    row = ft.Row(spacing=100, controls=[boton, boton2])
     
-    page.add(boton)
-    boton2 = ft.FloatingActionButton(icon = ft.icons.ABC)
-    page.add(boton2)
+
+    page.add(row)
+
     page.update()
     
 
