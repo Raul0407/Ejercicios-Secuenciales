@@ -1,11 +1,6 @@
-
-
 import flet as ft
 
 vlista = []
-
-
-
 
 def main(page: ft.Page):
 
